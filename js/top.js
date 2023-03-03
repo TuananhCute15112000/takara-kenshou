@@ -1,6 +1,5 @@
 $(document).ready(function () {
     "use strict";
-});
     // swiper
     var swiper = new Swiper(".mySwiper", {
         centeredSlides: true,
@@ -12,3 +11,4 @@ $(document).ready(function () {
             disableOnInteraction: false,
         },
     });
+});

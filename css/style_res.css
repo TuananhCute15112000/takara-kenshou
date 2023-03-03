@@ -7,7 +7,11 @@
 }
 
 /* responsive */
-@media screen and (max-width: 1500px) {}
+@media screen and (max-width: 1500px) {
+    .recruit__img .recruit__img__title {
+        font-size: 8.25vw;
+    }
+}
 
 @media screen and (max-width: 1150px) {
 
@@ -26,7 +30,6 @@
     }
 
     .recruit__img .recruit__img__title {
-        font-size: 8.25vw;
         margin-top: -60px;
     }
 
@@ -51,6 +54,9 @@
     #header .menu {
         width: 68%;
     }
+    .footer__menu{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -61,13 +67,25 @@
     }
 
     /* content */
-    #idx_xxxxxxx, #idx_xxxxxx, #idx_xxxxx, #idx_xxxx{
-        margin-top: 100px;
+    #infomation, #recruit, #new{
+        margin-top: 80px;
+    }
+    #aboutservices .content{
+        margin-bottom: 0;
+    }
+    .content__col2 .content__info {
+        padding: 40px 60px 50px;
     }
     .content .content__inner {
         flex-direction: column;
     }
+    .content__info .h3title {
+        text-align: center;
+    }
 
+    .content__info .btn_primary {
+        margin: 0 auto;   
+    }
     .content__inner .content__col1 {
         width: 100%;
     }
@@ -111,14 +129,17 @@
     .recruit__content .recruit__slogan {
         font-size: 38px;
     }
-
+    .recruit__img{
+        margin-top: 60px;
+    }
     .recruit__content {
         padding: 0 40px;
     }
-
+    .layout__list {
+        margin: 0 -15px;
+    }
     .layout__item {
-        width: calc(100% / 2);
-        margin-bottom: 40px;
+        padding: 0 15px;
     }
     .layout .layout__btn {
         margin-top: 50px;
@@ -129,9 +150,15 @@
     }
 
     /* footer */
+    #footer{
+        margin-top: 80px;
+    }
     .footer__logo .footer__img a {
         width: 46%;
         margin-right: 9px;
+    }
+    .footer__inner address{
+        margin-top: 0;
     }
 }
 
@@ -269,7 +296,7 @@
     }
 
     .mainvisual__content .mainvisual__content__title {
-        font-size: 9vw;
+        font-size: 8vmin;
     }
 
     .mainvisual__content .shinsei {
@@ -321,8 +348,7 @@
 
     #idx_xxxx,
     #idx_xxxxx,
-    #idx_xxxxxx,
-    #idx_xxxxxxx {
+    #idx_xxxxxx {
         margin-top: 80px;
     }
 
