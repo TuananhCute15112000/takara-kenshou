@@ -400,7 +400,7 @@ body {
     position: relative;
 }
 
-body#home {
+body {
     background: #0B0B0D;
 }
 
@@ -776,7 +776,7 @@ Contents
     font-weight: bold;
     font-size: 124px;
     line-height: 1.03;
-    margin-top: -69px;
+    margin-top: -4.667vw;
 }
 
 .recruit__content {
@@ -1110,10 +1110,7 @@ Footer
     display: flex;
     justify-content: space-between;
 }
-.image_logofooter{
-    width: 500px;
-    height: 77px;
-}
+
 .footer__logo .footer__img p {
     margin-top: auto;
     font-family: 'Noto Serif JP', serif;

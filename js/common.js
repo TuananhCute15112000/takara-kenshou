@@ -70,17 +70,17 @@ $(document).ready(function () {
         $('.menusp.box_sp').toggleClass('active');
         $('.menu').toggleClass('active');
         $('body').toggleClass('hidden');
-        $('#header .menu').css('transition', 'all .3s linear');
+        $('#header .menu nav').css('transition', 'all .3s linear');
     })
 });
 $(window).on('resize', function () {
     var win = $(window);
-    if (win.width() < 768) {
-        $('#header .menu').css('transition', 'all .3s linear');
+    if (win.width() < 992) {
+        $('#header .menu nav').css('transition', 'all .3s linear');
     }
     else {
         $('body').removeClass('hidden');
-        $('#header .menu').css('transition', 'none');
+        $('#header .menu nav').css('transition', 'none');
     }
 });
 // menu sticky
