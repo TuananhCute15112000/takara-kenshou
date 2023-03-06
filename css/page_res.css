@@ -4,26 +4,12 @@
 
 @media screen and (min-width: 1025px) {}
 
-@media screen and (max-width: 1024px) {}
-
-@media screen and (max-width: 992px) {
-    #p_mv{
-        height: 360px;
-    }
-    #p-greeting{
-        padding: 55px 0;
-    }
-    #p-outline{
-        padding-top: 45px;
-    }
+@media screen and (max-width: 1024px) {
+    /* -------------- start page company  ----------------*/
     #p_mv h2 {
         font-size: 28px;
     }
     #p_mv span{
-        font-size: 14px;
-    }
-    #p-greeting .greeting_desc p{
-        margin-bottom: 25px;
         font-size: 14px;
     }
     .pages h3.pages_title {
@@ -33,6 +19,28 @@
     .pages h3.pages_title span{
         font-size: 14px;
     }
+    /* -------------- end page company  ----------------*/
+
+}
+
+@media screen and (max-width: 992px) {
+    /* -------------- start page company  ----------------*/
+    #p_mv{
+        height: 280px;
+        padding-top: 80px;
+    }
+    #p-greeting{
+        padding: 55px 0;
+    }
+    #p-outline{
+        padding-top: 45px;
+    }
+  
+    #p-greeting .greeting_desc p{
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+ 
     #p-greeting .greeting_slogan{
         font-size: 22px;
         padding-bottom: 20px;
@@ -45,9 +53,11 @@
     #p-access .access_map iframe{
         height: 55vh;
     }
+    /* -------------- end page company  ----------------*/
 }
 
 @media screen and (max-width: 768px) {
+    /* -------------- start page company  ----------------*/
     #p-access .access_map {
         margin-top: 0;
     }
@@ -82,7 +92,7 @@
     }
 
     .pages table th {
-        font-size: 15px;
+        font-size: 14px;
        padding-bottom: 0;
     }
 
@@ -133,7 +143,10 @@
     .pages .tb_cal td {
         font-size: 15px;
     }
-
+    #p-access .access_map iframe{
+        height: 299px;
+    }
+    /* -------------- start page company  ----------------*/
 }
 
 @media screen and (max-width: 576px) {}
