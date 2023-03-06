@@ -409,7 +409,10 @@ Contents
 ------------------------------------------------------ */
 
 /*start mainvisual */
-#idx_mainvisual .inner {
+#mainvisual{
+    padding: 0;
+}
+#mainvisual .inner {
     width: 100%;
     max-width: 100%;
 }
@@ -564,7 +567,7 @@ Contents
 
 /* start section */
 #aboutservices {
-    padding-top: 70px;
+    padding-top: 120px;
 }
 
 #aboutservices .inner {
@@ -572,12 +575,12 @@ Contents
     width: 100%;
 }
 
-#aboutservices .content {
+#aboutservices .content:not(:last-child) {
     margin-bottom: 96px;
 }
 
 #infomation {
-    margin-top: 166px;
+    padding-top: 166px;
 }
 
 #infomation .inner {
@@ -586,7 +589,7 @@ Contents
 }
 
 #recruit {
-    margin-top: 148px;
+    padding-top: 148px;
 }
 
 #recruit .inner {
@@ -594,7 +597,8 @@ Contents
 }
 
 #new {
-    margin-top: 165px;
+    padding-top: 165px;
+    padding-bottom: 198px;
 }
 
 #new.inner {
@@ -1041,9 +1045,6 @@ h1 a {
 /* ------------------------------------------------------
 Footer
 ------------------------------------------------------ */
-#footer {
-    margin-top: 198px;
-}
 
 #contact .inner {
     max-width: 100%;
@@ -1073,7 +1074,8 @@ Footer
 }
 
 .contact__phone .contact__number {
-    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
     color: #fff;
     font-weight: bold;
     font-size: 55px;
@@ -1085,6 +1087,7 @@ Footer
 .contact__number .iconphone {
     width: 38px;
     height: 51px;
+    margin-right: 10px;
 }
 
 .contact__phone .btn_primary {
@@ -1107,7 +1110,10 @@ Footer
     display: flex;
     justify-content: space-between;
 }
-
+.image_logofooter{
+    width: 500px;
+    height: 77px;
+}
 .footer__logo .footer__img p {
     margin-top: auto;
     font-family: 'Noto Serif JP', serif;

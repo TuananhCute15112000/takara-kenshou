@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    Splitting();
     "use strict";
     // swiper
     var swiper = new Swiper(".mySwiper", {
