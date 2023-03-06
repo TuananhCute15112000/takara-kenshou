@@ -6,9 +6,57 @@
 
 @media screen and (max-width: 1024px) {}
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    #p_mv{
+        height: 360px;
+    }
+    #p-greeting{
+        padding: 55px 0;
+    }
+    #p-outline{
+        padding-top: 45px;
+    }
+    #p_mv h2 {
+        font-size: 28px;
+    }
+    #p_mv span{
+        font-size: 14px;
+    }
+    #p-greeting .greeting_desc p{
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    .pages h3.pages_title {
+        font-size: 30px;
+        padding-bottom: 45px;
+    }
+    .pages h3.pages_title span{
+        font-size: 14px;
+    }
+    #p-greeting .greeting_slogan{
+        font-size: 22px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        line-height: 2.1;
+    }
+    #p-greeting .greeting_name{
+        font-size: 18px;
+    }
+    #p-access .access_map iframe{
+        height: 55vh;
+    }
+}
 
 @media screen and (max-width: 768px) {
+    #p-access .access_map {
+        margin-top: 0;
+    }
+    #p-access{
+        padding-top: 50px;
+    }
+    #p-outline .outline_table{
+        margin-top: 0;
+    }
 
     .pages .image_r,
     .pages .image_l {
@@ -27,17 +75,15 @@
     }
 
     /*-----table-----*/
-    .pages table {
-        border: 1px solid #118abf;
-    }
 
     .pages table th,
     .pages table td {
-        padding: 8px;
+        padding: 12px 8px;
     }
 
     .pages table th {
         font-size: 15px;
+       padding-bottom: 0;
     }
 
     /*-----table scroll------*/
@@ -72,7 +118,7 @@
     }
 
     .pages table.tb_block tr th {
-        text-align: center;
+        text-align: left;
     }
 
     .pages table.tb_block tr:last-child td:last-child {

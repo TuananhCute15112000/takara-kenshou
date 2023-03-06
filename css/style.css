@@ -348,6 +348,8 @@ Variables
     --white-color: #fff;
     --jp-font: 'Noto Sans JP', sans-serif;
     --en-font: 'Kiwi Maru', serif;
+    --roboto: 'Roboto', sans-serif;
+    --jp-serif: 'Noto Serif JP', serif;
 }
 
 .d_flex {
