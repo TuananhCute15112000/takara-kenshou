@@ -88,15 +88,27 @@
         flex-direction: column;
         justify-content: unset;
     }
-
     #header .menu {
         width: 100%;
-        padding-top: 50px;
+    }
+    #header .menu  nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding-top: 100px;
         background: rgba(0, 0, 0, 0.7);
-        height: 100vh;
         overflow-y: scroll;
+        transform: translateX(110%);
+        transition: all .3s linear;
+        height: 100vh;
+        opacity: 0;
     }
 
+    #header .menu.active  nav{
+        transform: translateX(0);
+        opacity: 1;
+    }
     #header .menu__list {
         flex-direction: column;
         justify-content: unset;
@@ -107,13 +119,7 @@
         font-size: 18px;
     }
 
-    #header .menu {
-        transform: translateX(110%);
-    }
-
-    #header .menu.active {
-        transform: translateX(0);
-    }
+  
 
     /* header sticky */
 
