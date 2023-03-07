@@ -1,6 +1,33 @@
 @media screen and (max-width: 1500px) {}
 
-@media screen and (max-width: 1150px) {}
+@media screen and (max-width: 1150px) {
+    /* -------------- start page about  ----------------*/
+        /* c-content */
+        .c-content_info{
+            margin-top: 130px;
+            padding: 50px 4%;
+        }
+        .c-content_title::before{
+            left: -23%;
+        }
+        .c-content_item.--reverse .c-content_title::before{
+            right: -23%;
+        }
+        .c-content_title{
+            font-size: 20px;
+        }
+        .c-content_desc{
+            font-size: 15px;
+        }
+        /* slider */
+        .swiper2 {
+            height: 400px;
+        }
+        .strengths_slider::before {
+            height: 500px;
+        }
+    /* -------------- end page about  ----------------*/
+}
 
 @media screen and (min-width: 1025px) {}
 
@@ -56,8 +83,55 @@
     /* -------------- end page company  ----------------*/
 
     /* -------------- start page about  ----------------*/
+    .c-content_info{
+        margin-top: 100px;
+        padding: 40px 3%;
+    }
+    .c-content_title{
+        padding-bottom: 20px;
+    }
+    .strengths_info_title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
     .strengths_info_desc{
         font-size: 14px;
+    }
+    .strengths__list{
+        flex-direction: column;
+        margin: 0;
+    }
+    .strengths__item{
+        width: 55%;
+        margin: 0 auto  45px;
+    }
+    .strengths__slogan{
+        font-size: 22px;
+    }
+    #target{
+        padding: 55px 0;
+    }
+    .target_title{
+        font-size: 18px;
+        margin-bottom: 25;
+    }
+    .target_desc{
+        padding: 0;
+        margin-bottom: 45px;
+    }
+    .target_apply{
+        padding: 15px 15px;
+        margin-bottom: 55px;
+    }
+    .target_apply_title{
+        font-size: 22px;
+    }
+    .target_apply_item {
+        font-size: 16px;
+    }
+    /* slider */
+    .swiper2{
+        height: 320px;
     }
     /* -------------- end page about  ----------------*/
 
@@ -154,11 +228,91 @@
         height: 299px;
     }
     /* -------------- start page company  ----------------*/
+
+    /* -------------- start page about  ----------------*/
+    #strengths{
+        padding: 45px 0 55px;
+    }
+    .strengths__item{
+        max-width: 330px;
+        width: 96%;
+    }
+    .strengths_info_title{
+        font-size: 16px;
+    }
+    .strengths_info_desc{
+        padding: 0;
+    }
+    .strengths_info{
+        margin-bottom: 55px;
+    }
+    .strengths__slogan{
+        font-size: 16px;
+    }
+    .strengths__item img{
+        width: 120px;
+    }
+    .strengths_layout{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .swiper2{
+        height: 256px;
+    }
+    .strengths__item a{
+        padding: 30px 20px;
+    }
+    .c-content_item{
+        flex-direction: column;
+    }
+    .c-content_item.--reverse{
+        flex-direction: column;
+    }
+    .c-content_bg{
+        width: 100%;
+    }
+    .c-content_info{
+        width: 100%;
+        margin: 0;
+        padding: 45px 20px 55px;
+    }
+    .c-content_item.--reverse .c-content_info{
+        margin: 0;
+    }
+    .c-content_title{
+        font-size: 18px;
+    }
+    .c-content_title::before{
+        display: none;
+    }
+    .c-content_desc{
+        font-size: 14px;
+    }
+    .c-content_btn{
+        margin: 0 auto;
+    }
+    .target_apply_title {
+        font-size: 18px;
+    }
+    .target_apply_list{
+        flex-direction: column;
+    }
+    .target_apply_item{
+        font-size: 14px;
+    }
+    .target_apply_list ul:not(:last-child){
+        margin-bottom: 20px;
+    }
+    /* -------------- start page about  ----------------*/
 }
 
 @media screen and (max-width: 576px) {}
 
-@media screen and (max-width: 490px) {}
+@media screen and (max-width: 490px) {
+    .swiper2{
+        height: 168px;
+    }
+}
 
 @media screen and (max-width: 390px) {}
 
