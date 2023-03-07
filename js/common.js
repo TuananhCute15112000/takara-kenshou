@@ -39,3 +39,25 @@ $(window).bind('scroll', function () {
 });
 
 // page services
+const sections = document.querySelectorAll(".content01");
+const shadow = document.querySelector('.animate-bg_shawdow');
+
+const test = document.querySelector('#bg_services1');
+console.log(test.offsetTop);
+
+window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        console.log(pageYOffset);
+        if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+            var bg = document.querySelector('.animate-bg');
+            var test = bg.style.backgroundImage = "url('../images/services/" + current + ".jpg')";
+            bg.classList.add('active');
+            shadow.classList.add('active');
+        }
+    });
+});
+
+// https://stackoverflow.com/questions/72957343/change-active-class-in-navbar-on-scrolling-javascript-html
