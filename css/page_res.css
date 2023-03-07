@@ -54,6 +54,13 @@
         height: 55vh;
     }
     /* -------------- end page company  ----------------*/
+
+    /* -------------- start page about  ----------------*/
+    .strengths_info_desc{
+        font-size: 14px;
+    }
+    /* -------------- end page about  ----------------*/
+
 }
 
 @media screen and (max-width: 768px) {

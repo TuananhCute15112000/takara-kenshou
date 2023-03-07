@@ -17,6 +17,10 @@ body {
     text-rendering: optimizeSpeed;
 }
 
+html {
+    /* provoca efecto scroll*/
+    scroll-behavior: smooth;
+  }
 .hidden {
     overflow: hidden;
 }
