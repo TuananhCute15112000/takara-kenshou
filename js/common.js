@@ -1,5 +1,4 @@
-
-// });
+gsap.registerPlugin(ScrollTrigger);
 // scroll
 $(document).ready(function () {
     $('#scroller').click(function () {
@@ -40,24 +39,58 @@ $(window).bind('scroll', function () {
 
 // page services
 const sections = document.querySelectorAll(".content01");
-const shadow = document.querySelector('.animate-bg_shawdow');
-
-const test = document.querySelector('#bg_services1');
-console.log(test.offsetTop);
 
 window.addEventListener("scroll", () => {
     let current = "";
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        console.log(pageYOffset);
-        if (pageYOffset >= sectionTop) {
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
             current = section.getAttribute("id");
-            var bg = document.querySelector('.animate-bg');
-            var test = bg.style.backgroundImage = "url('../images/services/" + current + ".jpg')";
-            bg.classList.add('active');
-            shadow.classList.add('active');
+        }
+    });
+    sections.forEach((li) => {
+        li.classList.remove("active");
+        if (li.classList.contains(current)) {
+            li.classList.add("active");
+            const bg = li.querySelector('.background');
+            if ($(li).hasClass('active')) {
+                bg.style.backgroundImage = "url('../images/services/" + current + ".jpg')";
+            } else {
+                test.style.backgroundImage = "none";
+            }
         }
     });
 });
 
-// https://stackoverflow.com/questions/72957343/change-active-class-in-navbar-on-scrolling-javascript-html
+// page about
+gsap.to(".c-content_animate ", {
+    duration: 0.8,
+    scrollTrigger: {
+        trigger: ".c-content_animate ",
+        start: "top 95%",
+    },
+    scaleX: 0,
+    transformOrigin: "right",
+    ease: "none"
+})
+gsap.to(".c-content_animate.--1", {
+    duration: 0.8,
+    scrollTrigger: {
+        trigger: ".c-content_animate.--1",
+        start: "top 95%",
+    },
+    scaleX: 0,
+    transformOrigin: "right",
+    ease: "none"
+})
+gsap.to(".c-content_animate.--2", {
+    duration: 0.8,
+    scrollTrigger: {
+        trigger: ".c-content_animate.--2",
+        start: "top 96%",
+    },
+    scaleX: 0,
+    transformOrigin: "right",
+    ease: "none"
+})
