@@ -103,7 +103,12 @@
     body {
         font-size: 14px;
     }
-
+    .h3title{
+        font-size: 30px;
+    }
+    .h3title .en{
+        font-size: 14px;
+    }
     /* Header  Menu*/
     #header.header_fixed {
         position: fixed;
@@ -158,8 +163,6 @@
         font-size: 18px;
     }
 
-  
-
     /* header sticky */
 
     #header.header_fixed.fixed {
@@ -178,7 +181,6 @@
     #header.header_fixed.fixed h1 img {
         margin-top: unset;
     }
-
 
     /* menusp */
     .menusp.box_sp {
@@ -453,7 +455,7 @@
     .contact__phone .contact__number {
         display: flex;
         align-items: center;
-        font-size: 32px;
+        font-size: 36px;
         margin-bottom: 20px;
     }
 

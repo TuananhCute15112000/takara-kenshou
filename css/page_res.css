@@ -34,10 +34,6 @@
         height: 400px;
     }
 
-    .strengths_slider::before {
-        height: 500px;
-    }
-
     .strengths__slogan {
         font-size: 22px;
     }
@@ -79,9 +75,11 @@
     .response_desc {
         width: 100%;
     }
-    .response_desc{
+
+    .response_desc {
         padding-left: 0;
     }
+
     .response_title {
         text-align: center;
         margin-bottom: 35px;
@@ -109,6 +107,10 @@
     #p_mv {
         height: 280px;
         padding-top: 80px;
+    }
+
+    #p_mv span {
+        margin-top: 18px;
     }
 
     #p-greeting {
@@ -237,21 +239,28 @@
     .response_title {
         font-size: 28px;
     }
-    .response_title h3{
+
+    .response_title h3 {
         font-size: 4.032vw;
     }
+
     .response_img {
         margin-top: 80px;
     }
-    .content01_title{
-        font-size: 28px;
+
+    .content01_title {
+        font-size: 24px;
+        margin-bottom: 30px;
     }
-    .content01_desc{
+
+    .content01_desc {
         font-size: 15px;
     }
-    .background_services{
+
+    .background_services {
         height: 20.161vw;
     }
+
     /* -------------- end page services  ----------------*/
 }
 
@@ -430,6 +439,7 @@
     .c-content_title {
         font-size: 18px;
         text-align: center;
+        width: unset;
     }
 
     .c-content_title::before {
@@ -485,22 +495,27 @@
     .response-content {
         margin: 0 auto;
     }
-    .response_title h3{
+
+    .response_title h3 {
         font-size: 22px;
     }
+
     .response_img {
         margin-top: 45px;
     }
-    .content01_title{
-        font-size: 22px;
-        margin-bottom: 20px;
+
+    .content01_title {
+        text-align: center;
     }
-    .content01_desc{
+
+    .content01_desc {
         font-size: 14px;
     }
+
     .content01_desc:not(:last-child) {
-        margin-bottom: 10px;
+        margin-bottom: 25px;
     }
+
     /* -------------- end page services  ----------------*/
 }
 

@@ -32,6 +32,7 @@ $(window).on('resize', function () {
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 200) {
         $('.header_fixed').addClass('fixed');
+        console.log(1);
     } else {
         $('.header_fixed').removeClass('fixed');
     }
