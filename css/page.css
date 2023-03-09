@@ -620,7 +620,9 @@ others
     object-fit: cover;
     object-position: center;
 }
-
+.swiper2 .swiper-slide{
+    min-height: unset;
+} 
 /* end slider */
 .strengths_content1 {
     position: relative;
@@ -753,14 +755,14 @@ others
     position: absolute;
     height: 1px;
     width: 100px;
-    left: -140px;
+    left: -25%;
     bottom: 0;
     background: #1A1A1A;
 }
 
 .c-content_item.--reverse .c-content_title::before {
     left: unset;
-    right: -140px;
+    right: -25%;
 }
 
 .c-content_desc {
@@ -964,7 +966,7 @@ others
     display: block;
 }
 
-/*scroll */
+/* start scroll */
 .makewall {
     position: relative;
     z-index: 1;
@@ -1052,8 +1054,14 @@ others
 .content01 .content01_info {
     margin: auto;
 }
+/* end scroll */
 
-
+.background_services{
+    position: relative;
+    z-index: 1;
+    background: #15161A;
+    height: 200px;
+}
 /* MOZZILLA CSS */
 @-moz-document url-prefix() {}
 

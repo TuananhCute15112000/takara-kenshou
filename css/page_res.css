@@ -6,7 +6,7 @@
     /* c-content */
     .c-content_info {
         margin-top: 130px;
-        padding: 50px 4%;
+        padding: 45px 4%;
     }
 
     .c-content_item.--reverse .c-content_info {
@@ -79,7 +79,9 @@
     .response_desc {
         width: 100%;
     }
-
+    .response_desc{
+        padding-left: 0;
+    }
     .response_title {
         text-align: center;
         margin-bottom: 35px;
@@ -235,7 +237,9 @@
     .response_title {
         font-size: 28px;
     }
-
+    .response_title h3{
+        font-size: 4.032vw;
+    }
     .response_img {
         margin-top: 80px;
     }
@@ -244,6 +248,9 @@
     }
     .content01_desc{
         font-size: 15px;
+    }
+    .background_services{
+        height: 20.161vw;
     }
     /* -------------- end page services  ----------------*/
 }
@@ -422,6 +429,7 @@
 
     .c-content_title {
         font-size: 18px;
+        text-align: center;
     }
 
     .c-content_title::before {
@@ -466,17 +474,20 @@
 
     /* -------------- start page services  ----------------*/
     #response {
-        padding: 50px 0;
+        padding: 50px 0 0;
     }
 
     .response_title {
         font-size: 18px;
+        margin-bottom: 20px;
     }
 
     .response-content {
         margin: 0 auto;
     }
-
+    .response_title h3{
+        font-size: 22px;
+    }
     .response_img {
         margin-top: 45px;
     }
